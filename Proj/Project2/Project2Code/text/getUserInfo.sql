@@ -1,0 +1,1 @@
+SELECT `users`.`user_id`, `users`.`user_name`, `machines`.`ip_address`, `machines`.`machine_name` FROM `mastermind`.`machines` AS `machines`, `mastermind`.`users` AS `users` WHERE `machines`.`user_id` = `users`.`user_id`

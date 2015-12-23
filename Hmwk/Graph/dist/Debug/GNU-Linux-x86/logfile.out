@@ -1,0 +1,181 @@
+==17003== Memcheck, a memory error detector
+==17003== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==17003== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==17003== Command: ./cppapplication_1
+==17003== Parent PID: 16671
+==17003== 
+--17003-- 
+--17003-- Valgrind options:
+--17003--    --tool=memcheck
+--17003--    --leak-check=yes
+--17003--    --log-file=logfile.out
+--17003--    -v
+--17003-- Contents of /proc/version:
+--17003--   Linux version 3.13.0-74-generic (buildd@lcy01-07) (gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ) #118-Ubuntu SMP Thu Dec 17 22:52:10 UTC 2015
+--17003-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3
+--17003-- Page sizes: currently 4096, max supported 4096
+--17003-- Valgrind library directory: /usr/lib/valgrind
+--17003-- Reading syms from /home/super0/Dropbox/Private-Non-Public/Current Classes/CSC17C/Hmwk/CppApplication_1/dist/Debug/GNU-Linux-x86/cppapplication_1
+--17003-- Reading syms from /lib/x86_64-linux-gnu/ld-2.19.so
+--17003--   Considering /lib/x86_64-linux-gnu/ld-2.19.so ..
+--17003--   .. CRC mismatch (computed 4cbae35e wanted 8d683c31)
+--17003--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.19.so ..
+--17003--   .. CRC is valid
+--17003-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--17003--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--17003--   .. CRC mismatch (computed 4f1eed43 wanted a323a3ab)
+--17003--    object doesn't have a symbol table
+--17003--    object doesn't have a dynamic symbol table
+--17003-- Scheduler: using generic scheduler lock implementation.
+--17003-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==17003== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-17003-by-super0-on-???
+==17003== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-17003-by-super0-on-???
+==17003== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-17003-by-super0-on-???
+==17003== 
+==17003== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==17003== don't want to do, unless you know exactly what you're doing,
+==17003== or are doing some strange experiment):
+==17003==   /usr/lib/valgrind/../../bin/vgdb --pid=17003 ...command...
+==17003== 
+==17003== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==17003==   /path/to/gdb ./cppapplication_1
+==17003== and then give GDB the following command
+==17003==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=17003
+==17003== --pid is optional if only one valgrind process is running
+==17003== 
+--17003-- REDIR: 0x4019ca0 (ld-linux-x86-64.so.2:strlen) redirected to 0x380764b1 (???)
+--17003-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--17003--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--17003--   .. CRC mismatch (computed fc68135e wanted 45f5e986)
+--17003--    object doesn't have a symbol table
+--17003-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--17003--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--17003--   .. CRC mismatch (computed ae683f7e wanted 08c06df2)
+--17003--    object doesn't have a symbol table
+==17003== WARNING: new redirection conflicts with existing -- ignoring it
+--17003--     old: 0x04019ca0 (strlen              ) R-> (0000.0) 0x380764b1 ???
+--17003--     new: 0x04019ca0 (strlen              ) R-> (2007.0) 0x04c2e1a0 strlen
+--17003-- REDIR: 0x4019a50 (ld-linux-x86-64.so.2:index) redirected to 0x4c2dd50 (index)
+--17003-- REDIR: 0x4019c70 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c2f2f0 (strcmp)
+--17003-- REDIR: 0x401a9c0 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c31da0 (mempcpy)
+--17003-- Reading syms from /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19
+--17003--   Considering /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19 ..
+--17003--   .. CRC mismatch (computed 0df13638 wanted 88e81a42)
+--17003--    object doesn't have a symbol table
+--17003-- Reading syms from /lib/x86_64-linux-gnu/libgcc_s.so.1
+--17003--   Considering /lib/x86_64-linux-gnu/libgcc_s.so.1 ..
+--17003--   .. CRC mismatch (computed ea519b66 wanted 0c00ddb3)
+--17003--    object doesn't have a symbol table
+--17003-- Reading syms from /lib/x86_64-linux-gnu/libc-2.19.so
+--17003--   Considering /lib/x86_64-linux-gnu/libc-2.19.so ..
+--17003--   .. CRC mismatch (computed dc620abc wanted 148cbd6e)
+--17003--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.19.so ..
+--17003--   .. CRC is valid
+--17003-- Reading syms from /lib/x86_64-linux-gnu/libm-2.19.so
+--17003--   Considering /lib/x86_64-linux-gnu/libm-2.19.so ..
+--17003--   .. CRC mismatch (computed a46ef660 wanted 767bfa33)
+--17003--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libm-2.19.so ..
+--17003--   .. CRC is valid
+--17003-- REDIR: 0x53ddd60 (libc.so.6:strcasecmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--17003-- REDIR: 0x53e0050 (libc.so.6:strncasecmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--17003-- REDIR: 0x53dd530 (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--17003-- REDIR: 0x53db7c0 (libc.so.6:rindex) redirected to 0x4c2da30 (rindex)
+--17003-- REDIR: 0x53d9ac0 (libc.so.6:strlen) redirected to 0x4c2e0e0 (strlen)
+--17003-- REDIR: 0x53dcfa0 (libc.so.6:__GI_memcmp) redirected to 0x4c30b80 (__GI_memcmp)
+--17003-- REDIR: 0x53d8070 (libc.so.6:strcmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--17003-- REDIR: 0x53e8d20 (libc.so.6:__strcmp_sse2_unaligned) redirected to 0x4c2f1b0 (strcmp)
+--17003-- REDIR: 0x4e95d90 (libstdc++.so.6:operator new(unsigned long)) redirected to 0x4c2b070 (operator new(unsigned long))
+--17003-- REDIR: 0x53e2730 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--17003-- REDIR: 0x53e8fd0 (libc.so.6:__memcpy_sse2_unaligned) redirected to 0x4c2f6b0 (memcpy@@GLIBC_2.14)
+--17003-- REDIR: 0x53dcf60 (libc.so.6:bcmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--17003-- REDIR: 0x54b1060 (libc.so.6:__memcmp_sse4_1) redirected to 0x4c30c00 (__memcmp_sse4_1)
+--17003-- REDIR: 0x4e940f0 (libstdc++.so.6:operator delete(void*)) redirected to 0x4c2c250 (operator delete(void*))
+==17003== Use of uninitialised value of size 8
+==17003==    at 0x4EF2479: std::string::assign(std::string const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==17003==    by 0x4020A8: Vertex<std::string>::operator=(Vertex<std::string> const&) (vertex.h:16)
+==17003==    by 0x402120: Vertex<std::string>::Edge::Edge(Vertex<std::string> const&, int) (vertex.h:138)
+==17003==    by 0x401E12: Vertex<std::string>::connect(Vertex<std::string> const&, int const&) (vertex.h:187)
+==17003==    by 0x401572: main (main.cpp:49)
+==17003== 
+==17003== Invalid read of size 8
+==17003==    at 0x4EF2479: std::string::assign(std::string const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==17003==    by 0x4020A8: Vertex<std::string>::operator=(Vertex<std::string> const&) (vertex.h:16)
+==17003==    by 0x402120: Vertex<std::string>::Edge::Edge(Vertex<std::string> const&, int) (vertex.h:138)
+==17003==    by 0x401E12: Vertex<std::string>::connect(Vertex<std::string> const&, int const&) (vertex.h:187)
+==17003==    by 0x401572: main (main.cpp:49)
+==17003==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==17003== 
+==17003== 
+==17003== Process terminating with default action of signal 11 (SIGSEGV)
+==17003==  Access not within mapped region at address 0x0
+==17003==    at 0x4EF2479: std::string::assign(std::string const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==17003==    by 0x4020A8: Vertex<std::string>::operator=(Vertex<std::string> const&) (vertex.h:16)
+==17003==    by 0x402120: Vertex<std::string>::Edge::Edge(Vertex<std::string> const&, int) (vertex.h:138)
+==17003==    by 0x401E12: Vertex<std::string>::connect(Vertex<std::string> const&, int const&) (vertex.h:187)
+==17003==    by 0x401572: main (main.cpp:49)
+==17003==  If you believe this happened as a result of a stack
+==17003==  overflow in your program's main thread (unlikely but
+==17003==  possible), you can try to increase the size of the
+==17003==  main thread stack using the --main-stacksize= flag.
+==17003==  The main thread stack size used in this run was 8388608.
+--17003-- REDIR: 0x53d3df0 (libc.so.6:free) redirected to 0x4c2bd80 (free)
+==17003== 
+==17003== HEAP SUMMARY:
+==17003==     in use at exit: 181 bytes in 8 blocks
+==17003==   total heap usage: 12 allocs, 4 frees, 1,379 bytes allocated
+==17003== 
+==17003== Searching for pointers to 8 not-freed blocks
+==17003== Checked 193,464 bytes
+==17003== 
+==17003== 31 bytes in 1 blocks are possibly lost in loss record 6 of 8
+==17003==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==17003==    by 0x4EF1208: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==17003==    by 0x4EF1395: std::string::_M_mutate(unsigned long, unsigned long, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==17003==    by 0x4EF193D: std::string::_M_replace_safe(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==17003==    by 0x40142B: main (main.cpp:40)
+==17003== 
+==17003== 33 bytes in 1 blocks are possibly lost in loss record 7 of 8
+==17003==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==17003==    by 0x4EF1208: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==17003==    by 0x4EF2930: char* std::string::_S_construct<char const*>(char const*, char const*, std::allocator<char> const&, std::forward_iterator_tag) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==17003==    by 0x4EF2D47: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==17003==    by 0x4013DE: main (main.cpp:37)
+==17003== 
+==17003== 37 bytes in 1 blocks are possibly lost in loss record 8 of 8
+==17003==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==17003==    by 0x4EF1208: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==17003==    by 0x4EF1395: std::string::_M_mutate(unsigned long, unsigned long, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==17003==    by 0x4EF193D: std::string::_M_replace_safe(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==17003==    by 0x401475: main (main.cpp:44)
+==17003== 
+==17003== LEAK SUMMARY:
+==17003==    definitely lost: 0 bytes in 0 blocks
+==17003==    indirectly lost: 0 bytes in 0 blocks
+==17003==      possibly lost: 101 bytes in 3 blocks
+==17003==    still reachable: 80 bytes in 5 blocks
+==17003==         suppressed: 0 bytes in 0 blocks
+==17003== Reachable blocks (those to which a pointer was found) are not shown.
+==17003== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==17003== 
+==17003== Use --track-origins=yes to see where uninitialised values come from
+==17003== ERROR SUMMARY: 5 errors from 5 contexts (suppressed: 0 from 0)
+==17003== 
+==17003== 1 errors in context 1 of 5:
+==17003== Invalid read of size 8
+==17003==    at 0x4EF2479: std::string::assign(std::string const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==17003==    by 0x4020A8: Vertex<std::string>::operator=(Vertex<std::string> const&) (vertex.h:16)
+==17003==    by 0x402120: Vertex<std::string>::Edge::Edge(Vertex<std::string> const&, int) (vertex.h:138)
+==17003==    by 0x401E12: Vertex<std::string>::connect(Vertex<std::string> const&, int const&) (vertex.h:187)
+==17003==    by 0x401572: main (main.cpp:49)
+==17003==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==17003== 
+==17003== 
+==17003== 1 errors in context 2 of 5:
+==17003== Use of uninitialised value of size 8
+==17003==    at 0x4EF2479: std::string::assign(std::string const&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19)
+==17003==    by 0x4020A8: Vertex<std::string>::operator=(Vertex<std::string> const&) (vertex.h:16)
+==17003==    by 0x402120: Vertex<std::string>::Edge::Edge(Vertex<std::string> const&, int) (vertex.h:138)
+==17003==    by 0x401E12: Vertex<std::string>::connect(Vertex<std::string> const&, int const&) (vertex.h:187)
+==17003==    by 0x401572: main (main.cpp:49)
+==17003== 
+==17003== ERROR SUMMARY: 5 errors from 5 contexts (suppressed: 0 from 0)

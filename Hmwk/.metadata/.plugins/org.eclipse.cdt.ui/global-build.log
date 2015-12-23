@@ -1,0 +1,9 @@
+17:46:03 **** Build of configuration Default for project Assignment5 ****
+make all 
+make: *** No rule to make target 'all'.  Stop.
+17:51:48 **** Incremental Build of configuration Default for project Assignment5 ****
+make all 
+make: *** No rule to make target 'all'.  Stop.
+23:31:50 **** Incremental Build of configuration Default for project Assignment5 ****
+make all 
+make: *** No rule to make target 'all'.  Stop.

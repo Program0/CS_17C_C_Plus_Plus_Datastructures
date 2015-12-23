@@ -1,0 +1,102 @@
+/*
+* Recursion:
+* Trigonometric identies
+* tan(x+y)= [tan(x)+tan(y)]/[1-tan(x)*tan(y)]
+*
+* power series expansion for tangent:
+* tan(x)= x + 1/3(x^3)
+*
+* http://mathworld.wolfram.com/SeriesExpansion.html
+*/
+
+#include <iostream>
+#include <cstdlib>
+#include <cmath>
+
+// User libraries
+
+// Global Constants
+
+// Function Prototypes
+
+using namespace std;
+// Recursive tangent function
+double rtan(double);
+
+// Recursive max function
+// This is the beginning of mergesort algorithm
+int *fill(int);
+void prtAry(int *array, int, int);
+int rmax(int*array, int , int);
+
+int main(int argc, char** argv){
+	
+	// Test recursive tangent
+	for(float rad =-1; rad<=1; rad+=0.1){
+		cout<<"Recursive tangent = " 
+			<< (tan(rad) - rtan(rad))/tan(rand)*100<< endl;		
+	}
+	
+	srand(static_cast<unsigned int>(time(0)));
+	
+	// Fill the array
+	int *array = fill(size);
+	
+	// Print the array
+	prtAry(array,size,10);
+	
+	// Output the maximum
+	cout<<endl<<"The maximum in the array = " << rmax(array,0,size)<<endl;
+	
+	// Destroy the array
+	delete [] array;
+	
+	//Exit stage right
+	return 0;
+
+}
+
+double rtan(double x){
+	// Declare tolerance
+	double tol = 1e-10;
+
+	//Declare the base case
+	if(abs(x)<tol)
+		return x+(x*x*x)/3;
+		// Could just return x as x^3/3 is small 
+	// Recursive case
+	double a= rtan(x/2);
+	return 2*a/(1-a*a);
+}
+
+int *fill(int n){
+	// Allocate memory
+	int *a=new int[n];
+	
+	// Fill the array
+	for(int i = 0; i<n;i++){
+		a[i]=rand()%90+10;
+	}
+	
+	// Return the array;
+	
+	return a;
+}
+void prtAry(int *a, int n, int perLine){
+	cout<<endl;
+	for(int i=0;i<n;i++){
+		cout<<a[i]<<" ";
+		if(i%perLine==(perLine-1))<<endl;
+	}
+}
+int rmax(int*a, int  beg, int end){
+	if(end-beg<=1) return a[beg];
+	
+	// Calculate halfway point
+	int half = (end-beg)/2;
+	int m1=rmax(a,beg,half);
+	int m2=rmax(a,half,end);
+	
+	return (m1<m2?m2:m1);
+}
+

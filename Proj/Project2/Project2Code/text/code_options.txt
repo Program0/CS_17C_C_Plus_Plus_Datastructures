@@ -1,0 +1,8 @@
+b	bird-icon.png
+c	chicken-icon.png
+d	dog-icon.png
+f	frog-icon.png
+h	horse-icon.png
+m	mouse-icon.png
+p	pig-icon.png
+s	sheep-icon.png

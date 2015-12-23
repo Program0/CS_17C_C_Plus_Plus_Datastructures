@@ -1,0 +1,86 @@
+CIS 17C Final
+
+Send me a zip file that contains all the files and
+a menu.cpp so I can run all the programs.  Make
+sure you test out your programs sufficiently to
+prove to me that it works.
+
+Problem 1 - Hashing
+We would like to use initials to locate
+an individual.  For instance, MEL should
+locate the person Mark E. Lehr.  Note:
+this is all upper case.  Generate a hash
+function for the above using the numbers
+on your telephone.  You know, each letter
+has a number associated with it, so examine
+your telephone keypad.  Generate 1000
+3 letter initials and take statistics on
+a file of size 1000 to hold this information.
+For instance, how many collisions occured,
+max number of collisions, average search
+to find the person. 
+
+Problem 2 - Stacks
+Take my hyperbolic sin/cos recursive function 
+place a letter on a stack that represents a call 
+to the sine or cosine.
+When the program returns, examine the stack
+for how many times the hyp sine was called and
+how many times hyp cosine was called vs. the
+value you were trying to find.  Put the results
+in a table.
+
+Problem 3 - Queues
+Let us say you are in a line at the video store
+or bank like I was last weekend.  One line, 
+yet there are 3 clerks/tellers which service
+the same line.  Simulate the following,
+Clerk 1 - Services customers on the average 1/min
+Clerk 2 - Services customers on the average 0.5/min
+Clerk 3 - Services customers on the average 0.75/min
+Customers - Arrive at 3/minute 
+When the line gets to 5 customers add one more Clerk
+with the same service rate as Clerk 1.  Add one more
+clerk similarly for each 5 customers.  Take tellers
+away when they have serviced the line according to
+how they were added.  For instance, if a 4th clerk
+was added to the line because there were 5 customers
+waiting then remove the clerk when the customer count 
+in line goes to zero.
+What is my average wait time?
+
+Problem 4 - Sorting
+Create a list of 100000 random short integers.
+Use all the sorting routines we discussed to
+choose the top p elements in the list.  Let us
+say for example p is 10.  What routines could
+be configured to have the shortest sort time and why.
+
+
+Problem 5 - Binary Trees
+Take problem 1 and put each of the 3 letters in
+a sorted binary tree.  Compare times/operations to identify a
+match.
+
+Problem 6 - Weighted Graph
+In the vertex and edge structure defined below
+Vertex	Edge	Vertex
+SFO	    2704	BOS
+SFO	    1846	ORD
+ORD	     867	BOS
+ORD	     740	JFK
+JFK	     187	BOS
+SFO	    1464	DFW
+DFW	     802	ORD
+DFW	    1121	MIA
+MIA	    1090	JFK
+MIA	    1258	BOS
+SFO	     337	LAX
+LAX	    1235	DFW
+LAX	    2342	MIA
+
+a)  Find the shortest distance between
+BOS and LAX.
+
+b)  Find the minimum spanning tree.
+

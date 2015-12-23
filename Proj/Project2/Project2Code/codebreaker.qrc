@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/cow-icon.png</file>
+        <file>images/bird-icon.png</file>
+        <file>images/bull-icon.png</file>
+        <file>images/cat-icon.png</file>
+        <file>images/chicken-icon.png</file>
+        <file>images/dachshund-icon.png</file>
+        <file>images/dog-icon.png</file>
+        <file>images/frog-icon.png</file>
+        <file>images/horse-icon.png</file>
+        <file>images/mouse-icon.png</file>
+        <file>images/pig-icon.png</file>
+        <file>images/rooster-icon.png</file>
+        <file>images/sheep-icon.png</file>
+        <file>text/icons.txt</file>
+        <file>images/green-button.png</file>
+        <file>images/green-grass.png</file>
+        <file>images/place-holder.png</file>
+        <file>images/circle-icon.png</file>
+        <file>text/code_options.txt</file>
+        <file>images/question.png</file>
+        <file>images/barn_small.png</file>
+        <file>images/barn_animals.png</file>
+        <file>images/icon.png</file>
+        <file>images/new.png</file>
+        <file>images/open.png</file>
+        <file>images/save.png</file>
+        <file>images/login-icon.png</file>
+    </qresource>
+</RCC>

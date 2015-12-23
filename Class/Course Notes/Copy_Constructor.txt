@@ -1,0 +1,35 @@
+// Copy constructor
+// NOTE: An error in the constructor reverses the passed object's links.
+SimpleVectorLList::SimpleVectorLList(const SimpleVectorLList &obj){
+
+    // Set the size equal to passed objects size
+    vectorSize = obj.vectorSize;
+
+    // Set the head to null then can change if the obj has any
+    // nodes in its list
+    head = NULL;
+
+    Node *cursor; // For navigating through obj list
+
+    // Now we go through each link in the list creating new links
+    // and copy the data into these new links.
+    cursor = obj.head;
+
+    while(cursor){
+
+        try{
+            // Create a new link and set its data
+            Node *link = new Node;
+            link->data=cursor->data;
+            // Now link it with the other links in the list
+            link->next = head;
+            // Set the head link
+            head = link;
+            // Go to to the next link in obj list
+            cursor= cursor->next;
+        }
+        catch(std::bad_alloc){
+            memError();
+        }
+    }
+}

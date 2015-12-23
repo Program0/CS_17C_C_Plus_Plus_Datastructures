@@ -1,0 +1,10 @@
+Compare bubble, selection, heap, merge and quicksort.  Prove the Big-O characteristics by analyzing the code.  i.e. utilize a polynomial approach.
+
+http://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+
+http://www.cs.usfca.edu/~galles/visualization/Heap.html
+
+http://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
+
+Post here, send an email which copies yourself to mark.lehr@rcc.edu with subject:
+Perez, Mauricio -  Sorting Comparisons - 48942

@@ -1,0 +1,11 @@
+0	bull-icon.png	a
+0	cow-icon.png	b
+0	question.png	q
+1	bird-icon.png	b
+1	chicken-icon.png	c
+1	dog-icon.png	d
+1	frog-icon.png	f
+1	horse-icon.png	h
+1	mouse-icon.png	m
+1	pig-icon.png	p
+1	sheep-icon.png	s

@@ -1,0 +1,102 @@
+==9462== Memcheck, a memory error detector
+==9462== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==9462== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==9462== Command: ./assignment6
+==9462== Parent PID: 4722
+==9462== 
+--9462-- 
+--9462-- Valgrind options:
+--9462--    --tool=memcheck
+--9462--    --leak-check=yes
+--9462--    --log-file=logfile.out
+--9462--    -v
+--9462-- Contents of /proc/version:
+--9462--   Linux version 3.13.0-73-generic (buildd@lgw01-13) (gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ) #116-Ubuntu SMP Fri Dec 4 15:31:30 UTC 2015
+--9462-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3
+--9462-- Page sizes: currently 4096, max supported 4096
+--9462-- Valgrind library directory: /usr/lib/valgrind
+--9462-- Reading syms from /home/super0/Dropbox/Private-Non-Public/Current Classes/CSC17C/Hmwk/Assignment6/dist/Debug/GNU-Linux-x86/assignment6
+--9462-- Reading syms from /lib/x86_64-linux-gnu/ld-2.19.so
+--9462--   Considering /lib/x86_64-linux-gnu/ld-2.19.so ..
+--9462--   .. CRC mismatch (computed 4cbae35e wanted 8d683c31)
+--9462--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.19.so ..
+--9462--   .. CRC is valid
+--9462-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--9462--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--9462--   .. CRC mismatch (computed 4f1eed43 wanted a323a3ab)
+--9462--    object doesn't have a symbol table
+--9462--    object doesn't have a dynamic symbol table
+--9462-- Scheduler: using generic scheduler lock implementation.
+--9462-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==9462== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-9462-by-super0-on-???
+==9462== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-9462-by-super0-on-???
+==9462== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-9462-by-super0-on-???
+==9462== 
+==9462== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==9462== don't want to do, unless you know exactly what you're doing,
+==9462== or are doing some strange experiment):
+==9462==   /usr/lib/valgrind/../../bin/vgdb --pid=9462 ...command...
+==9462== 
+==9462== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==9462==   /path/to/gdb ./assignment6
+==9462== and then give GDB the following command
+==9462==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=9462
+==9462== --pid is optional if only one valgrind process is running
+==9462== 
+--9462-- REDIR: 0x4019ca0 (ld-linux-x86-64.so.2:strlen) redirected to 0x380764b1 (???)
+--9462-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--9462--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--9462--   .. CRC mismatch (computed fc68135e wanted 45f5e986)
+--9462--    object doesn't have a symbol table
+--9462-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--9462--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--9462--   .. CRC mismatch (computed ae683f7e wanted 08c06df2)
+--9462--    object doesn't have a symbol table
+==9462== WARNING: new redirection conflicts with existing -- ignoring it
+--9462--     old: 0x04019ca0 (strlen              ) R-> (0000.0) 0x380764b1 ???
+--9462--     new: 0x04019ca0 (strlen              ) R-> (2007.0) 0x04c2e1a0 strlen
+--9462-- REDIR: 0x4019a50 (ld-linux-x86-64.so.2:index) redirected to 0x4c2dd50 (index)
+--9462-- REDIR: 0x4019c70 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c2f2f0 (strcmp)
+--9462-- REDIR: 0x401a9c0 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c31da0 (mempcpy)
+--9462-- Reading syms from /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19
+--9462--   Considering /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.19 ..
+--9462--   .. CRC mismatch (computed 0df13638 wanted 88e81a42)
+--9462--    object doesn't have a symbol table
+--9462-- Reading syms from /lib/x86_64-linux-gnu/libgcc_s.so.1
+--9462--   Considering /lib/x86_64-linux-gnu/libgcc_s.so.1 ..
+--9462--   .. CRC mismatch (computed ea519b66 wanted 0c00ddb3)
+--9462--    object doesn't have a symbol table
+--9462-- Reading syms from /lib/x86_64-linux-gnu/libc-2.19.so
+--9462--   Considering /lib/x86_64-linux-gnu/libc-2.19.so ..
+--9462--   .. CRC mismatch (computed dc620abc wanted 148cbd6e)
+--9462--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.19.so ..
+--9462--   .. CRC is valid
+--9462-- Reading syms from /lib/x86_64-linux-gnu/libm-2.19.so
+--9462--   Considering /lib/x86_64-linux-gnu/libm-2.19.so ..
+--9462--   .. CRC mismatch (computed a46ef660 wanted 767bfa33)
+--9462--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libm-2.19.so ..
+--9462--   .. CRC is valid
+--9462-- REDIR: 0x53ddd60 (libc.so.6:strcasecmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--9462-- REDIR: 0x53e0050 (libc.so.6:strncasecmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--9462-- REDIR: 0x53dd530 (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--9462-- REDIR: 0x53db7c0 (libc.so.6:rindex) redirected to 0x4c2da30 (rindex)
+--9462-- REDIR: 0x53d9ac0 (libc.so.6:strlen) redirected to 0x4c2e0e0 (strlen)
+--9462-- REDIR: 0x53dcfa0 (libc.so.6:__GI_memcmp) redirected to 0x4c30b80 (__GI_memcmp)
+--9462-- REDIR: 0x53d8070 (libc.so.6:strcmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--9462-- REDIR: 0x53e8d20 (libc.so.6:__strcmp_sse2_unaligned) redirected to 0x4c2f1b0 (strcmp)
+--9462-- REDIR: 0x4e95d90 (libstdc++.so.6:operator new(unsigned long)) redirected to 0x4c2b070 (operator new(unsigned long))
+--9462-- REDIR: 0x53e2730 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--9462-- REDIR: 0x53e8fd0 (libc.so.6:__memcpy_sse2_unaligned) redirected to 0x4c2f6b0 (memcpy@@GLIBC_2.14)
+--9462-- REDIR: 0x53dcf60 (libc.so.6:bcmp) redirected to 0x4a25720 (_vgnU_ifunc_wrapper)
+--9462-- REDIR: 0x54b1060 (libc.so.6:__memcmp_sse4_1) redirected to 0x4c30c00 (__memcmp_sse4_1)
+--9462-- REDIR: 0x4e940f0 (libstdc++.so.6:operator delete(void*)) redirected to 0x4c2c250 (operator delete(void*))
+--9462-- REDIR: 0x53d3df0 (libc.so.6:free) redirected to 0x4c2bd80 (free)
+==9462== 
+==9462== HEAP SUMMARY:
+==9462==     in use at exit: 0 bytes in 0 blocks
+==9462==   total heap usage: 7 allocs, 7 frees, 112 bytes allocated
+==9462== 
+==9462== All heap blocks were freed -- no leaks are possible
+==9462== 
+==9462== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==9462== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -1,0 +1,27 @@
+01:34:05 **** Build of configuration Debug for project TestProject ****
+make all 
+Building file: ../src/TestProject.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestProject.d" -MT"src/TestProject.d" -o "src/TestProject.o" "../src/TestProject.cpp"
+Finished building: ../src/TestProject.cpp
+ 
+Building target: TestProject
+Invoking: GCC C++ Linker
+g++  -o "TestProject"  ./src/TestProject.o   
+Finished building target: TestProject
+ 
+01:34:28 **** Incremental Build of configuration Debug for project TestProject ****
+make all 
+make: Nothing to be done for `all'.
+01:34:34 **** Incremental Build of configuration Debug for project TestProject ****
+make all 
+make: Nothing to be done for `all'.
+01:34:38 **** Incremental Build of configuration Debug for project TestProject ****
+make all 
+make: Nothing to be done for `all'.
+15:19:01 **** Incremental Build of configuration Debug for project TestProject ****
+make all 
+make: Nothing to be done for `all'.
+15:19:06 **** Incremental Build of configuration Debug for project TestProject ****
+make all 
+make: Nothing to be done for `all'.
